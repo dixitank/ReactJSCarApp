@@ -1,0 +1,73 @@
+exports[`CarForm.test.js renders without crashing 1`] = `
+<form>
+  <h1>
+    Add
+  </h1>
+  <Field
+    component={[Function]}
+    label="Car model"
+    name="model"
+    placeholder="Car Model"
+    type="text" />
+  <Field
+    component={[Function]}
+    label="Car brand"
+    name="brand"
+    placeholder="Car brand"
+    type="text" />
+  <Field
+    component={[Function]}
+    label="Car version"
+    name="version"
+    placeholder="Version of Car"
+    type="text" />
+  <Field
+    component={[Function]}
+    label="Year of release"
+    name="year"
+    placeholder="Year of release"
+    type="number" />
+  <Field
+    component={[Function]}
+    label="Price"
+    name="price"
+    placeholder="Price"
+    type="number" />
+  <Field
+    component={[Function]}
+    label="Fuel Consumption"
+    name="fuel"
+    placeholder="Fuel Consumption in miles/Litre"
+    type="number" />
+  <Field
+    component={[Function]}
+    label="Annual maintainence"
+    name="annualMaintainence"
+    placeholder="Annual Maintainence in $"
+    type="number" />
+  <div>
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      type="submit">
+      <i
+        aria-hidden="true"
+        className="fa fa-paper-plane-o" />
+       Submit
+    </button>
+    <button
+      className="btn btn-default btn-space"
+      disabled={true}
+      onClick={[Function]}
+      type="button">
+      Clear Values
+    </button>
+    <button
+      className="btn btn-default btn-space"
+      onClick={[Function]}
+      type="button">
+      Cancel
+    </button>
+  </div>
+</form>
+`;

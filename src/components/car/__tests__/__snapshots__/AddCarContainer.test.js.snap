@@ -1,0 +1,19 @@
+exports[`AddCarContainer.test.js renders without crashing 1`] = `
+<div
+  className="container">
+  <ReduxForm
+    handleCancel={[Function]}
+    handleSave={[Function]}
+    heading="Add Car details"
+    initialValues={
+      Object {
+        "authorId": "",
+        "category": "",
+        "id": "",
+        "length": "",
+        "title": "",
+        "watchHref": "",
+      }
+    } />
+</div>
+`;

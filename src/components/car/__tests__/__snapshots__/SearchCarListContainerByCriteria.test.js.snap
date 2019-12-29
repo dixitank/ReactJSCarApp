@@ -1,0 +1,56 @@
+exports[`SearchCarListContainerByCriteria.test.js renders without crashing 1`] = `
+<div
+  className="container-fluid">
+  <div
+    className="row mt-3">
+    <div
+      className="col">
+      <h1>
+        Cars
+      </h1>
+    </div>
+  </div>
+  <div
+    className="row mt-3">
+    <div
+      className="col">
+      <div
+        className="btn-group"
+        role="group">
+        <button
+          className="btn btn-primary"
+          onClick={[Function]}
+          type="button">
+          <i
+            aria-hidden="true"
+            className="fa fa-plus" />
+           New
+        </button>
+        <button
+          className="btn btn-warning ml-2"
+          onClick={[Function]}
+          type="button">
+          <i
+            aria-hidden="true"
+            className="fa fa-plus" />
+           Search By Mileage
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row">
+    <div
+      className="col">
+      <CarList
+        cars={
+          Array [
+            Object {
+              "brand": "Ford",
+            },
+          ]
+        } />
+    </div>
+  </div>
+</div>
+`;

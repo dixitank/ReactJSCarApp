@@ -1,0 +1,14 @@
+exports[`SearchCarContainer.test.js renders without crashing 1`] = `
+<div
+  className="container">
+  <ReduxForm
+    handleCancel={[Function]}
+    handleSave={[Function]}
+    heading="Add"
+    initialValues={
+      Object {
+        "brand": "Fusion",
+      }
+    } />
+</div>
+`;

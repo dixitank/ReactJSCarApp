@@ -1,0 +1,283 @@
+exports[`CarList.test.js renders without crashing 1`] = `
+<BootstrapTable
+  bodyContainerClass={null}
+  bordered={false}
+  cellEdit={
+    Object {
+      "afterSaveCell": undefined,
+      "beforeSaveCell": undefined,
+      "blurToSave": false,
+      "mode": "none",
+      "nonEditableRows": undefined,
+    }
+  }
+  columnFilter={false}
+  condensed={true}
+  containerClass={null}
+  csvFileName="spreadsheet.csv"
+  data={
+    Array [
+      Object {
+        "Model": "Ford",
+        "brand": "Ford",
+      },
+      Object {
+        "Model": "Fusion",
+        "brand": "Fusion",
+      },
+    ]
+  }
+  deleteRow={false}
+  expandColumnOptions={
+    Object {
+      "expandColumnBeforeSelectColumn": true,
+      "expandColumnComponent": undefined,
+      "expandColumnVisible": false,
+    }
+  }
+  exportCSV={false}
+  fetchInfo={
+    Object {
+      "dataTotalSize": 0,
+    }
+  }
+  headerContainerClass={null}
+  height="100%"
+  hover={true}
+  ignoreSinglePage={false}
+  insertRow={false}
+  keyBoardNav={false}
+  multiColumnSearch={false}
+  multiColumnSort={1}
+  options={
+    Object {
+      "noDataText": "No data",
+      "sortIndicator": true,
+    }
+  }
+  pagination={false}
+  printable={false}
+  replace={false}
+  search={false}
+  selectRow={
+    Object {
+      "bgColor": "#c1f291",
+      "clickToSelect": true,
+      "hideSelectColumn": true,
+      "mode": "radio",
+    }
+  }
+  striped={true}
+  tableBodyClass={null}
+  tableContainerClass={null}
+  tableHeaderClass={null}
+  trClassName=""
+  withoutTabIndex={false}>
+  <TableHeaderColumn
+    className=""
+    columnClassName=""
+    columnTitle={false}
+    dataAlign="left"
+    dataField="id"
+    dataSort={false}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerTitle={true}
+    hidden={true}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={true}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}>
+    Id
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    caretRender={[Function]}
+    className=""
+    columnClassName=""
+    columnTitle={true}
+    dataAlign="left"
+    dataField="model"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}>
+    Model
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    caretRender={[Function]}
+    className=""
+    columnClassName=""
+    columnTitle={true}
+    dataAlign="left"
+    dataField="brand"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filter={
+      Object {
+        "condition": "eq",
+        "delay": 0,
+        "type": "TextFilter",
+      }
+    }
+    filterFormatted={false}
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}>
+    Brand
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    caretRender={[Function]}
+    className=""
+    columnClassName=""
+    columnTitle={true}
+    dataAlign="left"
+    dataField="version"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}>
+    Version
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    caretRender={[Function]}
+    className=""
+    columnClassName=""
+    columnTitle={true}
+    dataAlign="left"
+    dataField="yearOfRelease"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filter={
+      Object {
+        "options": Array [
+          undefined,
+        ],
+        "type": "NumberFilter",
+      }
+    }
+    filterFormatted={false}
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}>
+    Year Of Release
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    caretRender={[Function]}
+    className=""
+    columnClassName=""
+    columnTitle={true}
+    dataAlign="left"
+    dataField="price"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}>
+    price
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    caretRender={[Function]}
+    className=""
+    columnClassName=""
+    columnTitle={true}
+    dataAlign="left"
+    dataField="fuelConsumption"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}>
+    Fuel Consumption
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    caretRender={[Function]}
+    className=""
+    columnClassName=""
+    columnTitle={true}
+    dataAlign="left"
+    dataField="annualMaintenanceCost"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}>
+    Annual Maintainence Cost
+  </TableHeaderColumn>
+</BootstrapTable>
+`;
