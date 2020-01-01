@@ -27,7 +27,7 @@ export class AddCarContainer extends React.Component {
             brand: values.brand,
             version: values.version,
             yearOfRelease: parseInt(values.year),
-            price: parseFloat(values.price),
+            price: values.price,
             fuelConsumption: parseFloat(values.fuel),
             annualMaintenanceCost: parseFloat(values.annualMaintainence)
         };

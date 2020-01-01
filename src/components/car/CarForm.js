@@ -2,6 +2,17 @@ import React, { PropTypes } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import FieldInput from '../common/FieldInput';
 
+const alphaNumeric = value =>
+  value && /[^a-zA-Z0-9 ]/i.test(value)
+    ? 'Only alphanumeric characters'
+    : undefined
+
+const maxLength = max => value =>
+    value && value.length > max ? `Must be ${max} characters or less` : undefined
+const maxLength4 = maxLength(4) 
+const maxLength7 = maxLength(7) 
+const maxLength5 = maxLength(5)    
+
 export const CarForm = ({ handleSubmit, pristine, reset, submitting, heading, handleSave, handleCancel }) => {
     return (
         <form onSubmit={handleSubmit(handleSave)}>
@@ -13,6 +24,7 @@ export const CarForm = ({ handleSubmit, pristine, reset, submitting, heading, ha
                 label="Car model"
                 placeholder="Car Model"
                 component={FieldInput}
+                validate={alphaNumeric}
             />
 
             <Field
@@ -21,6 +33,7 @@ export const CarForm = ({ handleSubmit, pristine, reset, submitting, heading, ha
                 label="Car brand"
                 placeholder="Car brand"
                 component={FieldInput}
+                validate={[alphaNumeric]}
             />
 
             <Field
@@ -29,6 +42,7 @@ export const CarForm = ({ handleSubmit, pristine, reset, submitting, heading, ha
                 label="Car version"
                 placeholder="Version of Car"
                 component={FieldInput}
+                validate={[alphaNumeric]}
             />
             <Field
                 type="number"
@@ -36,6 +50,7 @@ export const CarForm = ({ handleSubmit, pristine, reset, submitting, heading, ha
                 label="Year of release"
                 placeholder="Year of release"
                 component={FieldInput}
+                validate={[maxLength4]}
             />
 
             <Field
@@ -44,6 +59,7 @@ export const CarForm = ({ handleSubmit, pristine, reset, submitting, heading, ha
                 label="Price"
                 placeholder="Price"
                 component={FieldInput}
+                validate={[maxLength7]}
             />
             <Field
                 type="number"
@@ -51,6 +67,7 @@ export const CarForm = ({ handleSubmit, pristine, reset, submitting, heading, ha
                 label="Fuel Consumption"
                 placeholder="Fuel Consumption in miles/Litre"
                 component={FieldInput}
+                validate={[maxLength4]}
             />
             <Field
                 type="number"
@@ -58,6 +75,7 @@ export const CarForm = ({ handleSubmit, pristine, reset, submitting, heading, ha
                 label="Annual maintainence"
                 placeholder="Annual Maintainence in $"
                 component={FieldInput}
+                validate={[maxLength5]}
             />
 
             <div>
