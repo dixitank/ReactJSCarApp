@@ -2,6 +2,12 @@ import React, { PropTypes } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import FieldInput from '../common/FieldInput';
 
+const required = value => value ? undefined : 'Required'
+const numeric = value =>
+  value && /[^.0-9 ]/i.test(value)
+    ? 'Only numeric values'
+    : undefined
+
 export const CarSearchForm = ({ handleSubmit, pristine, reset, submitting, heading, handleSave, handleCancel }) => {
     return (
         <form onSubmit={handleSubmit(handleSave)}>
@@ -13,6 +19,7 @@ export const CarSearchForm = ({ handleSubmit, pristine, reset, submitting, headi
                 label="Distance To Travel"
                 placeholder="Distance To Travel"
                 component={FieldInput}
+                validate={[required,numeric]}
             />
 
             <Field
@@ -21,6 +28,7 @@ export const CarSearchForm = ({ handleSubmit, pristine, reset, submitting, headi
                 label="Expected Cost of Fuel"
                 placeholder="Expected Cost of Fuel"
                 component={FieldInput}
+                validate={[required,numeric]}
             />
 
 

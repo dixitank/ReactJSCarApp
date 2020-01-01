@@ -39,7 +39,7 @@ export class SearchCarContainer extends React.Component {
 
     handleCancel(event) {
         event.preventDefault();
-        this.props.history.replace('/carsByMileage');
+        this.props.history.replace('/cars');
     }
 
 

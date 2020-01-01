@@ -2,6 +2,8 @@ import React, { PropTypes } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import FieldInput from '../common/FieldInput';
 
+
+const required = value => value ? undefined : 'Required'
 const alphaNumeric = value =>
   value && /[^a-zA-Z0-9 ]/i.test(value)
     ? 'Only alphanumeric characters'
@@ -24,7 +26,7 @@ export const CarForm = ({ handleSubmit, pristine, reset, submitting, heading, ha
                 label="Car model"
                 placeholder="Car Model"
                 component={FieldInput}
-                validate={alphaNumeric}
+                validate={[required,alphaNumeric]}
             />
 
             <Field
@@ -33,7 +35,7 @@ export const CarForm = ({ handleSubmit, pristine, reset, submitting, heading, ha
                 label="Car brand"
                 placeholder="Car brand"
                 component={FieldInput}
-                validate={[alphaNumeric]}
+                validate={[required, alphaNumeric]}
             />
 
             <Field
@@ -100,8 +102,8 @@ const validate = values => {
         errors.model = 'Required';
     }
 
-    if (!values.make) {
-        errors.make = 'Required';
+    if (!values.brand) {
+        errors.brand = 'Required';
     }
 
     if (!values.version) {
