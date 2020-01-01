@@ -8,43 +8,80 @@ exports[`CarForm.test.js renders without crashing 1`] = `
     label="Car model"
     name="model"
     placeholder="Car Model"
-    type="text" />
+    type="text"
+    validate={
+      Array [
+        [Function],
+        [Function],
+      ]
+    } />
   <Field
     component={[Function]}
     label="Car brand"
     name="brand"
     placeholder="Car brand"
-    type="text" />
+    type="text"
+    validate={
+      Array [
+        [Function],
+        [Function],
+      ]
+    } />
   <Field
     component={[Function]}
     label="Car version"
     name="version"
     placeholder="Version of Car"
-    type="text" />
+    type="text"
+    validate={
+      Array [
+        [Function],
+      ]
+    } />
   <Field
     component={[Function]}
     label="Year of release"
     name="year"
     placeholder="Year of release"
-    type="number" />
+    type="number"
+    validate={
+      Array [
+        [Function],
+      ]
+    } />
   <Field
     component={[Function]}
     label="Price"
     name="price"
     placeholder="Price"
-    type="number" />
+    type="number"
+    validate={
+      Array [
+        [Function],
+      ]
+    } />
   <Field
     component={[Function]}
     label="Fuel Consumption"
     name="fuel"
     placeholder="Fuel Consumption in miles/Litre"
-    type="number" />
+    type="number"
+    validate={
+      Array [
+        [Function],
+      ]
+    } />
   <Field
     component={[Function]}
     label="Annual maintainence"
     name="annualMaintainence"
     placeholder="Annual Maintainence in $"
-    type="number" />
+    type="number"
+    validate={
+      Array [
+        [Function],
+      ]
+    } />
   <div>
     <button
       className="btn btn-primary"
